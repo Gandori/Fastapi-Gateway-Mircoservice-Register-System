@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'fastapi-gateway-microservice-register-system'
+version = '0.1.0'
+requires-python = '>=3.12'
+dependencies = [
+    'uvicorn==0.23.2',
+    'python-dotenv==1.0.0',
+    'fastapi==0.103.2',
+    'pydantic==2.4.2',
+    'pydantic-settings==2.0.3',
+    'pymongo==4.5.0',
+    'motor==3.3.1',
+    'redis==5.0.1',
+    'httpx==0.25.0',
+]
+
+[tool.black]
+line-length = 88
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
